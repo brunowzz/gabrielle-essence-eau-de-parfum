@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: #00744c;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-itens {
+    background-color: #FFF;
+    width: 650px;
+    height: 450px;
+    display: flex;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.product-info h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 5px;
+    color: #6C7289;
+    margin-bottom: 20px;
+}
+
+.product-info h1 {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #1C232B;
+    width: 236px;
+    margin-bottom: 24px;
+}
+
+.product-info #product-description {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #6C7289;
+    width: 237px;
+    margin-bottom: 30px;
+}
+
+.product-info #product-price {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #3D8168;
+    margin-bottom: 25px;
+}
+
+.product-info #product-price span {
+    margin-left: 19px;
+    font-size: 13px;
+    color: #6C7289;
+    text-decoration-line: line-through;
+}
+
+button {
+    width: 236px;
+    height: 48px;
+    background: #3D8168;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat';
+    line-height: 17px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button img {
+    margin-right: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #1A4032;
+    transition: 1s;
+}
+
+@media (max-width: 730px) {
+    .container {
+        background-color: transparent;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .container-itens {
+        flex-direction: column;
+        align-items: center;
+    }
+}
